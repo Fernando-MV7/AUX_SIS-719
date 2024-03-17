@@ -1,0 +1,62 @@
+				TEMPLATE STRINGS
+1. Soporte de múltiples líneas: Los template strings permiten que una cadena de texto se extienda a través de múltiples líneas sin necesidad de concatenar con el carácter de nueva línea \n. Simplemente escribes el texto en varias líneas, y eso se reflejará en el valor del template string.
+
+Ejemplo:
+
+			const multilineString = `Esta
+			es una
+			cadena de
+			múltiples líneas`;
+
+2. Interpolación de expresiones: Puedes incrustar expresiones de JavaScript directamente dentro de un template string utilizando la sintaxis ${expresión}. El valor de esa expresión se evaluará y se insertará en la cadena resultante.
+
+Ejemplo:
+
+			const nombre = 'Juan';
+			const edad = 30;
+			const mensaje = `Hola, mi nombre es ${nombre} y tengo ${edad} años.`;
+
+3. Anidamiento de expresiones: Puedes anidar expresiones dentro de otras expresiones en un template string.
+
+Ejemplo:
+
+			const a = 1;
+			const b = 2;
+			const c = 3;	
+			const resultado = `La suma de ${a} y ${b} es ${a + b}, y la suma de ${a}, ${b} y ${c} es ${a + b + c}.`;
+
+4. Etiquetado de funciones: Los template strings pueden ser "etiquetados" con una función que los procesará antes de su evaluación. Esto permite la creación de construcciones de cadenas de texto personalizadas y DSL (Domain-Specific Languages).
+
+Ejemplo:
+
+			function etiquetaPlural(cadenas, ...valores) {
+			  let resultado = '';
+			  for (let i = 0; i < valores.length; i++) {
+			    resultado += cadenas[i] + (valores[i] !== 1 ? 's' : '');
+			  }
+			  resultado += cadenas[cadenas.length - 1];
+			  return resultado;
+			}
+
+			const mensaje = etiquetaPlural`${5} manzana${3} naranja${2} plátano`;
+			console.log(mensaje); // Output: "5 manzanas3 naranjas2 plátanos"
+
+5. Escape de caracteres especiales: Los template strings mantienen el mismo comportamiento que las cadenas de texto regulares en cuanto al escape de caracteres especiales, como \n para nueva línea, \t para tabulación, etc.
+
+Los template strings ofrecen una forma más flexible y legible de trabajar con cadenas de texto en JavaScript, especialmente cuando se trata de cadenas de texto complejas o que involucran interpolación de expresiones.
+
+DIFERENCIA CON LAS COMILLAS DOBLES O SIMPLES
+
+Template Strings:
+
+	Permiten cadenas de múltiples líneas sin concatenar
+	Soportan interpolación de expresiones con ${expresión}
+	Pueden ser "etiquetados" con funciones para procesamiento personalizado
+	No requieren escape de comillas simples/dobles dentro de la cadena
+
+Cadenas de Texto Regulares:
+
+	Cadenas de una sola línea o requieren concatenación para múltiples líneas
+	No soportan interpolación de expresiones directamente
+	No pueden ser "etiquetadas" con funciones
+	Requieren escape de caracteres especiales como comillas dentro de la cadena

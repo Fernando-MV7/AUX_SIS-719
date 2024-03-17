@@ -1,0 +1,55 @@
+                                            CARACTERISTICAS DE TYPESCRIPT 
+
+1. Tipado estático: Esta es la principal característica de TypeScript. Permite especificar tipos de datos para variables, 
+    parámetros de función y valores de retorno. Esto ayuda a detectar errores en tiempo de compilación y mejora la comprensión del código.
+
+2. Clases y herencia: TypeScript introduce clases y herencia basadas en prototipos, lo que permite la programación orientada a objetos 
+    (POO) con características como clases, interfaces, modificadores de acceso (public, private, protected), constructores, propiedades y métodos.
+
+3. Módulos: TypeScript admite la modularización del código, lo que facilita la organización y reutilización del código. 
+    Soporta los patrones de importación/exportación de módulos de ES6.
+
+4. Genéricos: Los genéricos permiten crear componentes de código reutilizables que pueden trabajar con diferentes tipos de datos.
+
+5. Decoradores: Los decoradores son una forma de anotar o modificar las clases y miembros de clase con metadatos.
+
+6. Tipos de unión e intersección: TypeScript permite crear nuevos tipos combinando otros tipos existentes mediante uniones e intersecciones.
+
+7. Inferencia de tipos: El compilador de TypeScript puede deducir automáticamente los tipos de variables y parámetros a partir de su uso, lo que reduce la necesidad de anotaciones de tipo explícitas.
+
+8. Soporte para JSX: TypeScript tiene soporte integrado para JSX, lo que facilita el desarrollo de aplicaciones de React.
+
+9. Herramientas de desarrollo mejoradas: TypeScript viene con un compilador que traduce el código TypeScript a JavaScript, 
+    lo que permite el uso de características modernas de JavaScript en navegadores más antiguos. Además, proporciona una mejor integración con editores de código y herramientas de desarrollo,
+    como IntelliSense, refactorización de código y comprobación de tipos en tiempo real.
+
+10. Compatibilidad con JavaScript: El código JavaScript válido es también código TypeScript válido, lo que permite una migración gradual de proyectos existentes a TypeScript.
+
+                                DIFERENCIA ENTRE TYPESCRIPT Y JavaScript
+
+TypeScript:
+
+    Tipado estático
+    Clases y herencia orientada a objetos
+    Soporte para módulos ES6
+    Genéricos y tipos avanzados
+    Decoradores
+    Soporte para JSX
+    Herramientas de desarrollo mejoradas (IntelliSense, refactorización, comprobación de tipos)
+    Se compila/transpila a JavaScript
+    Adopción gradual desde JavaScript
+
+JavaScript:
+
+    Tipado dinámico
+    No tiene clases y herencia nativa (usa prototipos)
+    Soporte para módulos ES6 (pero menos estructurado)
+    No tiene genéricos ni tipos avanzados
+    No tiene decoradores
+    No tiene soporte nativo para JSX
+    Herramientas de desarrollo más básicas
+    Se interpreta directamente
+
+TypeScript agrega características adicionales de tipado estático, orientación a objetos, módulos estructurados y herramientas de desarrollo 
+mejoradas sobre 
+JavaScript, brindando más seguridad de tipos, legibilidad y mantenibilidad para proyectos de gran escala
