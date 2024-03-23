@@ -51,3 +51,28 @@ Contiene metadatos sobre el proyecto, como su nombre, versión, descripción, sc
     "webpack-cli": "^4.7.0"
   }=============>mientras que las dependencias de desarrollo son webpack y webpack-cli.
 } 
+
+3. archivo tsconfig.json es importante para configurar TypeScript, mientras que en Angular, 
+el archivo angular.json es fundamental para la configuración del proyecto.
+
+# Usa una imagen base de Node.js
+FROM node:14
+
+# Establece el directorio de trabajo
+WORKDIR /app
+
+# Copia los archivos del proyecto
+COPY . .
+
+# Instala las dependencias
+RUN npm install
+
+# Expone un puerto
+EXPOSE 3000
+
+# Comando para iniciar la aplicación
+CMD ["npm", "start"]
+
+En este Dockerfile, se utiliza una imagen base de Node.js versión 14, 
+se establece el directorio de trabajo en /app, se copian los archivos del proyecto, 
+se instalan las dependencias con npm install, se expone el puerto 3000 y se define el comando npm start para iniciar la aplicación.
