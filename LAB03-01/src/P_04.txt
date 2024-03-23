@@ -1,0 +1,16 @@
+Arrow Functions (Funciones Flecha):
+
+Son una forma más concisa de definir funciones en JavaScript, introducidas en ES6 (ECMAScript 2015).
+La sintaxis utiliza la flecha => en lugar de la palabra clave function.
+Tienen un contexto this léxico, es decir, heredan el this del ámbito envolvente.
+Si el cuerpo de la función es una sola expresión, se puede omitir las llaves {} y la palabra clave return (retorno implícito).
+
+Callbacks:
+
+Son funciones que se pasan como argumento a otras funciones, con la intención de ser llamadas (invocadas) más tarde.
+Son fundamentales para la programación asincrónica en JavaScript, ya que permiten ejecutar código después de que se complete 
+una operación asincrónica (como una solicitud HTTP o la lectura de un archivo).
+Los callbacks se utilizan ampliamente en el desarrollo web moderno, especialmente para manejar eventos, 
+solicitudes HTTP asincrónicas (AJAX), operaciones de bases de datos, etc.
+Aunque los callbacks han sido la forma tradicional de manejar el código asincrónico, las promesas (promises) 
+y las funciones asíncronas (async/await) ofrecen alternativas más legibles y escalables en versiones más recientes de JavaScript.
